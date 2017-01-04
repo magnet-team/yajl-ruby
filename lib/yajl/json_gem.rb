@@ -1,6 +1,6 @@
 require 'yajl' unless defined?(Yajl::Parser)
-require 'yajl/json_gem/parsing'
-require 'yajl/json_gem/encoding'
+# require 'yajl/json_gem/parsing'
+# require 'yajl/json_gem/encoding'
 
 module ::Kernel
   def JSON(object, opts = {})

@@ -365,3 +365,17 @@ I've had a lot of inspiration, and a lot of help. Thanks to everyone who's been 
 * Neil Berkman
 * Pavel Valodzka
 * Rob Sharp
+
+Changes in this FORK -
+## JSON gem Compatibility API
+
+The JSON gem compatibility API was enabled by default in the gem. Its removed in this fork and now to you have to explicitly require it like:
+
+``` ruby
+require 'yajl/json_gem/encoding'
+require 'yajl/json_gem/parsing'
+require 'yajl/json_gem'
+
+```
+
+That's right, you can just replace `"require 'json'"` with the lines above and you're done!
